@@ -1,0 +1,9 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+#dropbox {
+    border: 5px solid #0000ff;
+    width:  200px;
+    height: 100px;
+  }
