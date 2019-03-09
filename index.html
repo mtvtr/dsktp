@@ -5,15 +5,26 @@
   <meta charset="UTF-8">
   <title>dsk</title>
       <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/interactjs@1.3.4/dist/interact.min.js"></script>
+  <script src="js/index.js"> </script>
 </head>
 
 <body>
+  <div class = "input">
+    <input type = 'file' id="file" accept=".svg" onchange='uploadFile(event)'>
+    <label for="file">Choose SVG file...</label>
+    <button class = "newfile" onclick = "newFile()">Create new file</button>
+  </div>
+  <button class = "download-button" onclick = "download()" title = "Download as SVG file.">
+      DOWNLOAD
+  </button>
   <!-- <div id="dropbox">
     <input type="file" id="input" onchange="encode(this)" />
     <p>Drag one or more files...</p>
   </div> -->
-  <script src="js/index.js"> </script>
   <!-- <object type="image/svg+xml" data="img/main.svg"></object> -->
 </body>
 
 </html>
+
+
